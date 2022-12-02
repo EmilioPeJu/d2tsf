@@ -1,0 +1,15 @@
+*~
+O.*
+bin
+dbd
+db
+data
+lib
+.svn*
+iocs/*IOC*
+.idea
+documentation/
+iocs/example/
+iocs/example_sim/
+cmake-build-debug/
+

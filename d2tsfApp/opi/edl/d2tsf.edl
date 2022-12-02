@@ -1,0 +1,432 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1988
+y 285
+w 310
+h 390
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 29
+y 16
+w 66
+h 23
+font "arial-medium-r-20.0"
+fgColor index 14
+bgColor index 3
+value {
+  "D2TSF"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 45
+y 70
+w 68
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "UPTIME"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 44
+y 135
+w 104
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "HOLDOVER"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 44
+y 167
+w 106
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SAT COUNT"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 167
+y 164
+w 125
+h 27
+controlPv "$(device):NSATS"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 167
+y 132
+w 125
+h 27
+controlPv "$(device):HOLDOVER"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 168
+y 67
+w 125
+h 27
+controlPv "$(device):UPTIME"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 44
+y 200
+w 112
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "RF1 STATUS"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 169
+y 197
+w 125
+h 27
+controlPv "$(device):RF1STAT"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 44
+y 232
+w 110
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "RF1 POWER"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 169
+y 227
+w 125
+h 27
+controlPv "$(device):RF1POWER"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 44
+y 262
+w 97
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "RF1 NOISE"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 169
+y 257
+w 125
+h 27
+controlPv "$(device):RF1NOISE"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 44
+y 291
+w 113
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "RF2 STATUS"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 168
+y 287
+w 126
+h 27
+controlPv "$(device):RF2STAT"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 44
+y 322
+w 111
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "RF2 POWER"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 168
+y 317
+w 126
+h 27
+controlPv "$(device):RF2POWER"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 44
+y 352
+w 98
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "RF2 NOISE"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 168
+y 347
+w 126
+h 27
+controlPv "$(device):RF2NOISE"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 45
+y 103
+w 106
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "TIMESTAMP"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 168
+y 100
+w 125
+h 27
+controlPv "$(device):TS"
+displayMode "decimal"
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<asyn.AsynIP name="TS5" port="172.23.241.5:7006"/>
+	<d2tsf.d2tsf STREAMS_PORT="TS5" device="TS-DI-D2TSF-01" name="D2TSF1"/>
+</components>

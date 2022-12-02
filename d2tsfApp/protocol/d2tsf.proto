@@ -1,0 +1,13 @@
+Terminator = LF;
+LockTimeout = 1000;
+ReplyTimeout = 1000;
+ReadTimeout = 1000;
+
+
+mon{
+  out "mon"; 
+  in "OK "
+  "%(\$1:UPTIME)u,%(\$1:HOLDOVER)d,%(\$1:TS)u,%(\$1:NSATS)u,%(\$1:NRF)u,"
+  "%(\$1:RF1STAT)[A-Z],%(\$1:RF1POWER)[A-Z],%(\$1:RF1NOISE)d,"
+  "%(\$1:RF2STAT)[A-Z],%(\$1:RF2POWER)[A-Z],%(\$1:RF2NOISE)d";
+}

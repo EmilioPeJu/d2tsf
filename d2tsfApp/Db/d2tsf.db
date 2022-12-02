@@ -1,0 +1,27 @@
+# Records to trigger mon command and split the response over the relevant PVs
+# % macro, name, name
+# % macro, device, Device prefix
+# % macro, STREAMS_PORT, PTG streams port
+# % gui, $(name).gui, edm, d2tsf.edl, device=$(device)
+
+record(ao, "$(device):MON")
+{
+  field(SCAN, "1 second")
+  field(DTYP, "stream")
+  field(OUT,  "@d2tsf.proto mon($(device)) $(STREAMS_PORT)")
+}
+
+record(ai, "$(device):UPTIME"){}
+record(bi, "$(device):HOLDOVER") {
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+}
+record(longin, "$(device):TS"){}
+record(longin, "$(device):NSATS"){}
+record(longin, "$(device):NRF"){}
+record(stringin, "$(device):RF1STAT"){}
+record(stringin, "$(device):RF2STAT"){}
+record(stringin, "$(device):RF1POWER"){}
+record(stringin, "$(device):RF2POWER"){}
+record(longin, "$(device):RF1NOISE"){}
+record(longin, "$(device):RF2NOISE"){}
